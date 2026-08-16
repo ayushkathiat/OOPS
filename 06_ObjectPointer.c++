@@ -9,12 +9,18 @@ class Cricketer{
         this->name = name;
         this->runs = runs;
     }
+
 };
 int main(){
     Cricketer s1("Virat Kohli", 13000);
     Cricketer s2("rohit sharma", 1000);
 
-    cout<<s1.name<<" "<<s1.runs<<endl;
-    cout<<s2.name<<" "<<s2.runs<<endl;
+    Cricketer* p1 = &s1;
+    cout<<p1->name<<endl;
+    cout<<p1->runs<<endl;
+
+    p1->name = "VK";
+    cout<<p1->name<<endl;
+
 
 }
