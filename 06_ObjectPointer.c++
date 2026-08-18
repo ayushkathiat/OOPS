@@ -21,6 +21,5 @@ int main(){
 
     p1->name = "VK";
     cout<<p1->name<<endl;
-
-
+    
 }
