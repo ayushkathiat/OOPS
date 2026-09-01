@@ -15,10 +15,27 @@ public:
         cout<<name<<endl;
         cout<<marks<<endl;
     }
+
+    float getMarks(){     // GETTER 
+        return marks;
+    }
+
+    void setMarks(float m){      // SETTER
+        marks = m;
+    }
+
 private:
     float marks;
 };
 int main(){
     Student p1(10, "OP", 34.6);
+
+    // DISPLAY FUN OUTPUT
     p1.display();
+
+    // GETMARKS FUN OUTPUT
+    cout<<p1.getMarks()<<endl;
+
+    p1.setMarks(90.90);
+
 }
